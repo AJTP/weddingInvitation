@@ -37,7 +37,7 @@ body {
   inset: 0;
   z-index: 999;
   background: var(--ivory);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -354,7 +354,7 @@ body {
   font-size: clamp(1.7rem, 5.2vw, 2.5rem);
   line-height: 2.1;
   color: var(--olive-deep);
-  max-width: 16ch;
+  max-width: 32ch;
   direction: rtl;
 }
 .verse-translation {
@@ -363,7 +363,7 @@ body {
   font-style: italic;
   font-size: clamp(1.15rem, 3vw, 1.5rem);
   color: var(--ink-soft);
-  max-width: 32ch;
+  max-width: 38ch;
   line-height: 1.6;
 }
 .verse-source {
@@ -384,7 +384,7 @@ body {
   font-size: 0.72rem;
   letter-spacing: 0.36em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-dark);
   margin-bottom: 2.2rem;
 }
 .countdown {
@@ -427,20 +427,31 @@ body {
 
 /* ================= SECTION 3 — UBICACION ================= */
 #sec-3 {
-  background: var(--ivory);
+  background:
+    url("background-place.jpeg") center / cover no-repeat,
+    var(--olive-deep);
 }
+.contrast-box {
+  background: rgba(248, 243, 231, 0.25);
+  backdrop-filter: blur(4px);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
 .venue-name {
   font-family: "Marcellus", serif;
   font-size: clamp(1.8rem, 6vw, 2.6rem);
   color: var(--olive-deep);
 }
 .venue-address {
-  margin-top: 0.9rem;
+  margin: 0.9rem auto 0;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.2rem;
-  color: var(--ink-soft);
+  color: var(--ink);
   max-width: 26ch;
   line-height: 1.5;
+  text-align: center;
 }
 .maps-btn {
   margin-top: 2.4rem;
@@ -483,6 +494,11 @@ body {
 /* ================= SECTION 4 — ASISTENCIA ================= */
 #sec-4 {
   background: var(--ivory-2);
+}
+.assistance-title {
+  font-family: "Marcellus", serif;
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  color: var(--olive-deep);
 }
 .wa-btn {
   margin-top: 2.4rem;
