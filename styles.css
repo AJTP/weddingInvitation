@@ -351,8 +351,8 @@ body {
   margin-bottom: 1.6rem;
 }
 .surah-mark {
-  width: 52px;
-  margin-bottom: 1.6rem;
+  width: 36px;
+  margin-bottom: 0.8rem;
 }
 .arabic-verse {
   font-family: "Amiri", serif;
@@ -447,7 +447,7 @@ body {
 
 .venue-name {
   font-family: "Marcellus", serif;
-  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  font-size: clamp(1.6rem, 6vw, 2.6rem);
   color: var(--olive-deep);
 }
 .venue-address {
