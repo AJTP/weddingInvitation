@@ -436,6 +436,8 @@ body {
   background:
     url("background-place.jpeg") center / cover no-repeat,
     var(--olive-deep);
+  /* Reserva una zona inferior exclusiva para el indicador de desplazamiento. */
+  padding-bottom: calc(8vh + 6rem);
 }
 .contrast-box {
   background: rgba(248, 243, 231, 0.5);
@@ -580,6 +582,11 @@ body {
   }
   .countdown {
     gap: 0.9rem;
+  }
+
+  /* En móviles bajos, evita que el botón coincida con el indicador fijo. */
+  #sec-3 {
+    padding-bottom: calc(8vh + 7rem);
   }
 }
 
